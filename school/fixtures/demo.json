@@ -1,0 +1,18 @@
+[
+  {"model": "school.department", "pk": 1, "fields": {"name": "Информатика", "description": "Программирование и алгоритмы"}},
+  {"model": "school.department", "pk": 2, "fields": {"name": "Математика", "description": "Высшая математика"}},
+
+  {"model": "school.teacher", "pk": 1, "fields": {"first_name": "Анна", "last_name": "Петрова", "email": "petrova@school.example", "department": 1}},
+  {"model": "school.teacher", "pk": 2, "fields": {"first_name": "Игорь", "last_name": "Смирнов", "email": "smirnov@school.example", "department": 2}},
+
+  {"model": "school.course", "pk": 1, "fields": {"code": "CS101", "title": "Основы Python", "credits": 4, "max_students": 25, "department": 1, "teacher": 1}},
+  {"model": "school.course", "pk": 2, "fields": {"code": "CS201", "title": "Веб-разработка на Django", "credits": 5, "max_students": 20, "department": 1, "teacher": 1}},
+  {"model": "school.course", "pk": 3, "fields": {"code": "MA101", "title": "Линейная алгебра", "credits": 3, "max_students": 30, "department": 2, "teacher": 2}},
+
+  {"model": "school.student", "pk": 1, "fields": {"first_name": "Мария", "last_name": "Иванова", "email": "ivanova@student.example", "birth_date": "2005-03-14", "year_of_study": 2}},
+  {"model": "school.student", "pk": 2, "fields": {"first_name": "Дмитрий", "last_name": "Кузнецов", "email": "kuznetsov@student.example", "birth_date": "2004-11-02", "year_of_study": 3}},
+
+  {"model": "school.enrollment", "pk": 1, "fields": {"student": 1, "course": 1, "enrolled_on": "2026-09-01", "status": "active", "grade": null}},
+  {"model": "school.enrollment", "pk": 2, "fields": {"student": 1, "course": 3, "enrolled_on": "2026-09-01", "status": "completed", "grade": 5}},
+  {"model": "school.enrollment", "pk": 3, "fields": {"student": 2, "course": 2, "enrolled_on": "2026-09-03", "status": "active", "grade": null}}
+]

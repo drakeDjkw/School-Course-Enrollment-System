@@ -1,0 +1,8 @@
+django>=5.1
+djangorestframework>=3.15
+pytest-django>=4.9
+model-bakery>=1.20
+Pillow>=10.0
+Faker>=30.0
+openpyxl>=3.1
+python-docx>=1.1

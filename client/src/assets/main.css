@@ -1,0 +1,66 @@
+body {
+  background: #f6f7f9;
+}
+
+.thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.thumb-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  color: #adb5bd;
+}
+
+.preview-img {
+  max-height: 120px;
+  border-radius: 6px;
+}
+
+.data-table thead tr.filters th {
+  font-weight: normal;
+  background: #fff;
+}
+
+.data-table .actions {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.table-scroll {
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.table-scroll thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.album-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.album-thumb.selected {
+  border-color: var(--bs-primary);
+}
+
+.album-main {
+  max-height: 60vh;
+  border-radius: 8px;
+}
